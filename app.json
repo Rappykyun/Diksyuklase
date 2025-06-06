@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "diksyuklase",
     "name": "Diksyuklase",
     "slug": "Diksyuklase",
     "version": "1.0.0",
@@ -8,8 +9,8 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
+      "image": "./assets/icon.png",
+      "resizeMode": "native",
       "backgroundColor": "#ffffff"
     },
     "ios": {
@@ -17,13 +18,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
   }
 }
