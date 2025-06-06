@@ -2,10 +2,11 @@ import { Text, View, TouchableOpacity, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import "../globals.css";
 import React from "react";
+import { router } from "expo-router";
 
 const Home = () => {
   const handleMgaAralin = () => {
-    console.log("Mga Aralin pressed!");
+    router.push("/lessons");
   };
 
   const handleLumabas = () => {
@@ -15,10 +16,10 @@ const Home = () => {
   return (
     <View className=" relative flex-1">
       <LinearGradient
-        colors={["#FFE868", "#FAF7BF"]} 
-        start={{ x: 0, y: 0 }} 
-        end={{ x: 0, y: 1 }} 
-        className="absolute inset-0" 
+        colors={["#FFE868", "#FAF7BF"]}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 0, y: 1 }}
+        className="absolute inset-0"
       />
       <View className="opacity-60 -top-9 absolute left-0">
         <Image
@@ -68,8 +69,7 @@ const Home = () => {
             className="active:bg-orange-600 active:scale-95 px-8 py-5 bg-orange-500 rounded-full shadow-lg"
             onPress={handleLumabas}
           >
-            <Text className="text-lg font-bold tracking-wide text-center text-white"
-            >
+            <Text className="text-lg font-bold tracking-wide text-center text-white">
               LUMABAS
             </Text>
           </TouchableOpacity>
