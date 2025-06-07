@@ -76,7 +76,7 @@ const Lessons = () => {
       <ScrollView
         className="flex-1 pt-16"
         contentContainerStyle={{ paddingBottom: 100 }}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={true}
       >
         <View className="items-center px-8">
           <View className="rounded-3xl px-8 py-4 mb-8 bg-white border-4 border-orange-300 shadow-lg">
@@ -92,7 +92,6 @@ const Lessons = () => {
                 onPress={() => handleLessonPress(lesson.id)}
                 className="rounded-3xl border-3 px-8 py-5 mb-5 border-green-600 shadow-xl"
                 style={{
-                  transform: [{ rotate: index % 2 === 0 ? "1deg" : "-1deg" }],
                   backgroundColor: index % 2 === 0 ? "#4ADE80" : "#22C55E",
                   elevation: 8,
                   shadowColor: "#000",

@@ -1,36 +1,73 @@
 {
   "expo": {
     "scheme": "diksyuklase",
-    "name": "Diksyuklase",
-    "slug": "Diksyuklase",
+    "name": "DIKSYUKLASE",
+    "slug": "diksyuklase",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/icon.png",
-      "resizeMode": "native",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.akosirappy.diksyuklase"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
+    "metro": {
+      "resolver": {
+        "sourceExts": [
+          "js",
+          "jsx",
+          "json",
+          "ts",
+          "tsx",
+          "cjs",
+          "mjs"
+        ],
+        "assetExts": [
+          "glb",
+          "gltf",
+          "png",
+          "jpg",
+          "jpeg",
+          "gif",
+          "svg",
+          "bmp",
+          "webp",
+          "mp4",
+          "mp3",
+          "wav",
+          "aac",
+          "m4a",
+          "pdf"
+        ]
+      }
+    },
     "plugins": [
-      "expo-router",
-      "expo-font",
-      "expo-asset"
-    ]
+      [
+        "expo-dev-client"
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0827cc5c-dfa4-434a-901c-61387a96b50e"
+      }
+    }
   }
 }
